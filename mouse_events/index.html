@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in js</title>
+</head>
+<body>
+    <h1>mouse events</h1>
+    <p id = "text1">click the button</p>
+    <button onclick="changeText()">Click</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("text1").innerHTML = "Text changed!";
+        }
+    </script>
+    <br><br/>
+    <p id="text2">Mouse over</p>
+    <button onmouseover="changeText2()">Hover</button>
+    <script>
+        function changeText2() {
+            document.getElementById("text2").innerHTML = "Mouse over event triggered!";
+        }
+    </script>
+    <br><br/>
+    <p id="text3">Mouse out</p>
+    <button onmouseout="changeText3()">Hover out</button>
+    <script>
+        function changeText3() {
+            document.getElementById("text3").innerHTML = "Mouse out event triggered!";
+        }
+    </script>
+    <br><br/>
+    <p id="text4">Mouse down</p>
+    <button onmousedown="changeText4()">Mouse down</button>
+    <script>
+        function changeText4() {
+            document.getElementById("text4").innerHTML = "Mouse down event triggered!";
+        }
+    </script>
+    <br><br/>
+    <p id="text5">Mouse up</p>
+    <button onmouseup="changeText5()">Mouse up</button>
+    <script>
+        function changeText5() {
+            document.getElementById("text5").innerHTML = "Mouse up event triggered!";
+        }
+    </script>
+    <br><br/>
+    <p  id="text6">Mouse move</p>
+    <button onmousemove="changeText6()">Move mouse</button>
+    <script>
+        function changeText6() {
+            document.getElementById("text6").innerHTML = "Mouse move event triggered!";
+        }
+    </script>
+    <br><br/>
+    <p id="text7">Mouse enter</p>
+    <button onmouseenter="changeText7()">Mouse enter</button>
+    <script>
+        function changeText7() {
+            document.getElementById("text7").innerHTML = "Mouse enter event triggered!";
+        }
+    </script>
+    <br><br/>
+    <p id="text8">Mouse leave</p>
+    <button onmouseleave="changeText8()">Mouse leave</button>
+    <script>
+        function changeText8() {
+            document.getElementById("text8").innerHTML = "Mouse leave event triggered!";
+        }
+    </script>
+
+    <br><br/>
+</body>
+</html>
