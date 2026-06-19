@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in js</title>
+</head>
+<body>
+     <h1>Keyboard events</h1>
+    <p id="text1">Press a key</p>
+    <input type="text" onkeydown="changeText1(event)" placeholder="Type something...">
+    <script>
+        function changeText1(event) {
+          document.getElementById("text1").innerHTML = "Key down event triggered! Key: " + event.key;
+             
+        }
+    </script>
+    <br><br/>
+    <p id="text2">Release a key</p>
+    <input type="text" onkeyup="changeText2(event)" placeholder="Type something...">
+    <script>
+        function changeText2(event) {
+          document.getElementById("text2").innerHTML = "Key up event triggered! Key: " + event.key;
+            
+        }
+    </script>
+    <br><br/>
+</body>
+</html>
