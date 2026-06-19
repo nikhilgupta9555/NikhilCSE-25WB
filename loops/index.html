@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Programming</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var count;
+        document.write("Starting Loop"+"<br/>");
+
+        // for loop
+        for (count=0;count<10;count++)
+        {
+            document.write("Count is: "+count+"<br/>");
+            document.write("<br/>");
+        }
+        document.write("Loop Ended"+"<br/>");
+
+        //for in loop
+        for(key in Object)
+        {
+            const person={
+                fname:"John",
+                lname:"Doe",
+                age:"23"
+            };
+            for(let x in person)
+            {
+              console.log("person details:"+x+":"+person[x]);
+            }
+        }
+        //while loop
+        var count=0;
+        document.write("Starting While Loop"+"<br/>");
+        while(count<10)
+        {
+            document.write("Count is: "+count+"<br/>");
+            count++;
+        }
+        document.write("While Loop Ended"+"<br/>");
+
+        //do while loop
+        var count=0;
+        document.write("Starting Do While Loop"+"<br/>");
+        do
+        {
+            document.write("Count is: "+count+"<br/>");
+            count++;
+        }
+        while(count<10);
+        document.write("Do While Loop Ended"+"<br/>");
+
+        //conditional loop
+        var age=20;
+
+        if(age>18)
+        {
+            document.write("You are eligible to vote"+"<br/>");
+        }
+        else
+        {
+            document.write("You are not eligible to vote"+"<br/>");
+        }
+
+        //switch case loop
+        var grade = 'A';
+        document.write("entering switch block<br/>");
+        switch(grade)
+        {
+            case 'A':
+                document.write("good job<br/>");
+                break;
+
+            case 'B':
+                document.write("pretty good<br/>");
+                break;
+            
+            case 'C':
+                document.write("passed<br/>");
+                break;
+            case 'D':
+                document.write("not so good<br/>");
+                break;
+                
+            case 'F':
+                document.write("failed<br/>");
+                break;
+                
+            default:
+                document.write("unknown grade<br/>");   
+        }
+        document.write("exiting switch block<br/>");
+
+        
+    </script>
+</body>
+</html>
